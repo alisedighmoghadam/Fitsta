@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitsta</title>
+    <link rel="icon" href="15103373071553508372-256.png">
+    <link rel="stylesheet" href="https://use.typekit.net/bwh5yof.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <div class="top-nav-div">
+            <nav class="top-nav" id="topNav">
+                <ul class="menu-list">
+                    
+                    <a href="/home"><img src="15103373071553508372-256.png" alt="Fitsta Logo" width="40px" id="logo"></a>
+                    <a href="/home">Home</a>
+                    <a href="/MealsPacks">Meals Packages </a>
+                    <a href="#socialMedia">Contact Us</a>
+                    <a href="#aboutUs">About Us</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <Main>
+        <div class="reg-page">
+            <h1>Let<br> us <br>know<br> you!</h1>
+            <div class="reg-card">
+                <h5>Login to your <br> account</h5>
+                <form id="reg-form" action="/register-user?login=true" method="POST">
+                    <div class="rows">
+                        
+                        <div class="form-sections">
+                            <label for="email" class="form-label"> Email</label>
+                            <div>
+                                <input type="text" class="form-input" name="email" id="email" autocomplete="email-login" placeholder="example@example.com"  tabindex="3" required>
+                                <p id="email-error">This field required!</p>
+                            </div>
+                            
+                        </div>
+                        <div class="form-sections">
+                            <label for="password" class="form-label"></span> Password</label>
+                            <div>
+                                <input type="password" class="form-input" name="password" id="password-login" autocomplete="new-password"   tabindex="4" required>
+                                <p id="pass-error">This field required!</p>
+                            </div>
+                        
+                        </div>
+                        <div class="submit-button-div" id="submit-button-div">
+                            <div id="submit">
+                                <input type="submit" value="Submit" name="submit" id="submit-button" tabindex="5">
+                            </div>
+                    </div>
+                </form>
+                {{#if hide}}
+                <h3 id="au-error">{{errorMsg}}</h3>
+                {{else}}
+                <h3 id="au-error">{{errorMsg}}</h3>
+                {{/if}}
+            </div>
+        </div>
+    </Main>
+    <footer>
+
+        <div class="social-media" id="socialMedia">
+            <h4>Contact Us</h4>
+            <a href="instagram.com"><img src="5639255371566470606-64.png" alt="instagram"></a>
+            <a href="facebook.com"><img src="97255801586787813-64.png" alt="Facebook"></a>
+            <a href="Twitter.com"><img src="7140107361586787870-64.png" alt="Twitter"></a>
+
+            
+        </div>
+    </footer>
+    <script src="logValidation.js"></script>
+</body>
+</html>

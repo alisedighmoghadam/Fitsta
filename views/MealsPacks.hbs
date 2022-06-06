@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitsta</title>
+    <link rel="icon" href="15103373071553508372-256.png">
+    <link rel="stylesheet" href="https://use.typekit.net/bwh5yof.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="top-nav-div">
+            <nav class="top-nav" id="topNav">
+                <ul class="menu-list">
+                    
+                    <a href="/home"><img src="15103373071553508372-256.png" alt="Fitsta Logo" width="40px" id="logo"></a>
+                    <a href="/home">Home</a>
+                    <a href="/MealsPacks.html">Meals Packages </a>
+                    <a href="#socialMedia">Contact Us</a>
+                    <a href="/home#aboutUs">About Us</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="hero-mp">
+        <div class="hero-mp-contents">
+            <h1>Our Meal Packages</h1>
+        </div>
+        <div class="packs-menu">
+            {{#each data}}
+            <div class="packs-cards">
+                <img src="{{imgFile}}" alt={{name}}">
+                <h6>{{name}}</h6>
+                <p>{{description}}</p>
+                <h5>Start from {{price}}$</h5>
+                <p>{{foodNum}} Meals</p>
+            </div>
+            {{/each}}
+            <!--<div class="packs-cards">
+                <img src="1175492571536062028-128.png" alt="muscle gain image">
+                <h6>Muscle Gain Master</h6>
+                <p>Higher protein and calorie portions to support your muscle gain momentum</p>
+                <h5>Start from 7$</h5>
+                <p>9 Meals</p>
+            </div>
+            <div class="packs-cards">
+                <img src="11110536551536062028-128.png" alt="keto image">
+                <h6>Keto Master</h6>
+                <p>High fat, low carb meals with moderate protein to achieve and sustain ketosis</p>
+                <h5>Start from 7$</h5>
+                <p>5 Meals</p>
+            </div>
+            <div class="packs-cards">
+                <img src="14734832241536062008-128.png" alt="fat burner image">
+                <h6>Fat Burner Master</h6>
+                <p>Low carb, nutrient-rich meals with fat-burning profiles to support fat loss</p>
+                <h5>Start from 5$</h5>
+                <p>15 Meals</p>
+            </div>-->
+        </div>
+        <hr>
+    </main>
+    <footer>
+
+        
+        <div class="social-media" id="socialMedia">
+            <h4>Contact Us</h4>
+            <a href="instagram.com"><img src="5639255371566470606-64.png" alt="instagram"></a>
+            <a href="facebook.com"><img src="97255801586787813-64.png" alt="Facebook"></a>
+            <a href="Twitter.com"><img src="7140107361586787870-64.png" alt="Twitter"></a>
+
+            
+        </div>
+    </footer>
+</body>
+</html>

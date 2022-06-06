@@ -1,0 +1,273 @@
+@import url("https://use.typekit.net/bwh5yof.css");
+html{
+    scroll-behavior:smooth;
+}
+body{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    background-color: #4D4646;
+}
+header{
+    font-family: montserrat,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: #7FCD91;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    position: relative
+    
+}
+.top-nav{
+    margin: 0 300px;
+    align-content: center;
+}
+.menu-list{
+    margin: 0px;
+    flex-wrap: wrap;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    
+    
+
+} 
+.menu-list a{
+    text-decoration: none;
+    color: #5B5656;
+    margin: auto;
+    
+}
+.hero{
+    
+    height: 600px;
+    background-image: url(hermes-rivera-OzBLe_Eg1mg-unsplash.jpg);
+    width: auto;
+    background-size:cover;
+    
+}
+.hero h1{
+    font-family: montserrat,sans-serif;
+    font-weight: 1000;
+    font-size:50px;
+    font-style:normal;
+    margin: 0px 50px;
+    text-align: left;
+    display:block;
+    padding: 128px 0px;
+    color: #5B5656;
+    height: auto;
+    width: 450px;
+    
+    
+}
+.healthy{
+    color: #7FCD91;
+    font-size: 60px;
+}
+.contents{
+    font-family: montserrat,sans-serif;
+    font-weight: 600;
+    font-size:50px;
+    font-style:normal;
+    color: #F5EAEA;
+}
+
+.vectors{
+    width: 100%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin: 100px;
+    margin-top: 20px;
+    width: auto;
+    justify-content: space-between;
+    
+    
+
+}
+
+.vector img{
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    background-color:#7FCD91;
+    border-radius: 5px;
+    
+}
+.vector-titles{
+    width: 100%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin: 100px;
+    width: auto;
+    justify-content: space-between;
+}
+
+.vtitles h5{
+    font-family: montserrat,sans-serif;
+    font-weight: 300;
+    font-size:30px;
+    margin: 0px;
+    color: #F5EAEA;
+}
+.vtitles p{
+    font-family: montserrat,sans-serif;
+    font-weight: 200;
+    font-size:10px;
+    color: #F5EAEA;
+}
+.info{
+    background-color: #7FCD91;
+    width: 100%;
+    height: 400px;
+    
+
+    display: flex;
+    flex-direction: row;
+}
+.info img{
+    height: 400px;
+    
+}
+.info h4{
+    font-family: montserrat,sans-serif;
+    font-weight: 600;
+    font-size:50px;
+    margin: 30px;
+    margin-bottom: 5px;
+    text-align:left ;
+    color:#4D4646;
+}
+.info p{
+    font-family: montserrat,sans-serif;
+    font-weight: 100;
+    font-size:25px;
+    text-align:left;
+    margin: 30px;
+    color: #5B5656;
+}
+.footer-menu{
+    display:flex ;
+    flex-wrap: wrap;
+    width:100%;
+}
+.menu-cards{
+    background-color:#7FCD91 ;
+    width: 295px;
+    height: 400px;
+    margin: 20px;
+    border-radius: 3px;
+    box-shadow: 110px 110px #0000;
+
+}
+.menu-cards img{
+    width: 200px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.menu-cards h6{
+    margin: 5px;
+    color: #4D4646;
+}
+.menu-cards p{
+    margin: 5px;
+}
+hr {
+    width: 80%;
+    
+}
+.social-media{
+    font-family: montserrat,sans-serif;
+    font-weight: 600;
+    font-size:40px;
+}
+.social-media h4{
+    margin: 1px;
+}
+.social-media img{
+    width: 30px;
+}
+.hero-mp{
+    font-family: montserrat,sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    font-style: normal;
+}
+.hero-mp-contents{
+    
+    background-image: url(charles-deluvio-D-vDQMTfAAU-unsplash.jpg);
+    height: 250px;
+    background-size:cover;
+    padding: 20px;
+}
+.hero-mp-contents h1{
+    color: #4D4646;
+    margin: 0px;
+}
+.packs-menu{
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+.packs-cards{
+    font-size: 20px;
+    background-color: #7FCD91;
+    width: 250px;
+    height: 500px;
+    padding: 20px;
+    color: #4D4646;
+    margin: 20px 0px;
+    border-radius: 3px;
+}
+.packs-cards img{
+    width: 100px;
+    margin: 30px;
+}
+.packs-cards h6{
+    font-size: 30px;
+    font-weight: 900;
+    margin: 0px;
+    min-height: 80px;
+    color: #F5EAEA;
+}
+.packs-cards h5{
+    font-size: 35px;
+    font-weight: 900;
+    margin: 0px;
+    color: #F5EAEA;
+}    
+.buttoms{
+    width: 250px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin: 30px auto ;
+    
+
+}
+#log-buttom,#reg-buttom{
+    width: 100px;
+    height: 50px;
+    text-decoration: none;
+    color: #4D4646;
+    background-color: #7FCD91;
+    border-radius: 3px;
+    font-size: larger;
+    font-family: montserrat,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    
+}
+#log-buttom p,#reg-buttom p{
+    margin: 10px;
+}
+

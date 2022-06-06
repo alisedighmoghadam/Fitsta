@@ -1,0 +1,47 @@
+@import url("https://use.typekit.net/bwh5yof.css");
+
+.welcome-hero{
+    background-image: url('https://images.unsplash.com/photo-1635303107703-65b7b7353959?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80');
+    background-size: cover;
+    margin: 0px;
+    height: 350px;
+    text-align: left;
+    padding: 50px;
+}
+.welcome-hero-div h1{
+    
+    font-family: montserrat,sans-serif;
+    font-weight: 1000;
+    font-size:50px;
+    font-style:normal;
+    margin: 30px;
+    color: #7FCD91;
+}
+.welcome-hero-div p{
+    
+    font-family: montserrat,sans-serif;
+    font-weight: 1000;
+    font-size:20px;
+    font-style:normal;
+    margin: 30px;
+    color: #7FCD91;
+}
+.welcome-hero-div a{
+    width: auto;
+    height: auto;
+}
+.welcome-hero-div button{
+    width: 100px;
+    height: 50px;
+    color: #4D4646;
+    background-color: #7FCD91;
+    border-radius: 3px;
+    font-size: larger;
+    font-family: montserrat,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    border: 0px;
+    margin-left: 40px;
+    margin-top: 10px;
+    cursor: pointer;
+}

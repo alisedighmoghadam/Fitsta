@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitsta</title>
+    <link rel="icon" href="15103373071553508372-256.png">
+    <link rel="stylesheet" href="https://use.typekit.net/bwh5yof.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <div class="top-nav-div">
+            <nav class="top-nav" id="topNav">
+                <ul class="menu-list">
+                    
+                    <a href="/home"><img src="15103373071553508372-256.png" alt="Fitsta Logo" width="40px" id="logo"></a>
+                    <a href="/home">Home</a>
+                    <a href="/MealsPacks">Meals Packages </a>
+                    <a href="#socialMedia">Contact Us</a>
+                    <a href="#aboutUs">About Us</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <Main>
+        <div class="reg-page">
+            <h1>Let<br> us <br>know<br> you!</h1>
+            <div class="reg-card">
+                <h5>Create An Account</h5>
+                <form id="reg-form" action="/register-user?reg=true" method="POST">
+                    <div class="rows">
+                        <div class="form-sections">
+                            <label for="fname" class="form-label"><span class="important">*</span> First Name</label>
+                            <input type="text" class="form-input" name="fname" id="first-name" autocomplete="given-name"   tabindex="1" required>
+                        
+                        </div>
+                        <div class="form-sections">
+                            <label for="lname" class="form-label"><span class="important">*</span> Last Name</label>
+                            <input type="text" class="form-input" name="lname" id="last-name" autocomplete="family-name"   tabindex="2" required>
+                        
+                        </div>
+                        <div class="form-sections">
+                            <label for="email" class="form-label"><span class="important">*</span> Email</label>
+                            <input type="text" class="form-input" name="email" id="email" autocomplete="email" placeholder="example@example.com"  tabindex="3" required>
+                        
+                        </div>
+                        <div class="form-sections">
+                            <label for="password" class="form-label"><span class="important">*</span> Password</label>
+                            <input type="password" class="form-input" name="password" id="password" autocomplete="new-password"   tabindex="4" required>
+                            <div>
+
+                            </div>
+                        </div>
+                        <div class="submit-button-div" id="submit-button-div">
+                            <div id="submit">
+                                <input type="submit" value="Submit" name="submit" id="submit-button" tabindex="5">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <p id="email-error">*Enter correct email address</p>
+                <p id="pass-error">*Minimum eight characters <br> *At least one letter<br> *One number<br> *One special character</p>
+        </div>
+    </Main>
+    <footer>
+
+        <div class="social-media" id="socialMedia">
+            <h4>Contact Us</h4>
+            <a href="instagram.com"><img src="5639255371566470606-64.png" alt="instagram"></a>
+            <a href="facebook.com"><img src="97255801586787813-64.png" alt="Facebook"></a>
+            <a href="Twitter.com"><img src="7140107361586787870-64.png" alt="Twitter"></a>
+
+            
+        </div>
+    </footer>
+    <script src="regValidation.js"></script>
+</body>
+</html>

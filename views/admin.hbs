@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      input {
+        margin: 4px;
+        width: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Admin : {{fname}} {{lname}}</h1>
+    <h3>email : {{email}}</h3>
+    <a href="/logout"><button>Logout</button></a>
+    {{!-- name, username, email, password, photo --}}
+    <table border='1' style="border-width: thin; border-spacing: 0px; border-style: none; border-color: black;">
+    <tr>
+        <th>Package name</th>
+        <th>Package price</th>
+        <th>Package description</th>
+        <th>Package food category</th>
+        <th>Number of meals</th>
+        <th>Image</th>
+        <th colspan="2">actions</th>
+    </tr>
+    {{#each data}}
+    <tr>
+        <form method="post" action="updatePack" enctype="multipart/form-data">
+                <input type="hidden" name="id" value="{{pack_id}}" />
+                        <td><input type="text" name="name" value="{{name}}" /></td>
+                        <td><input type="number" step="0.01" name="price" value="{{price}}" /></td>
+                        <td><input type="text" name="desc" value="{{description}}" /></td>
+                        <td><input type="text" name="category" value="{{category}}" /></td>
+                        <td><input type="number" name="number" value="{{foodNum}}" /></td>
+                        <td><img src="{{imgFile}}" style ="width:50%;" /></td>
+                         <td>  <input type="submit" value="Update" /></td>
+            </form>   
+        <td>
+        <form method="POST" action="deletePack" enctype="multipart/form-data"> 
+        <input type="hidden" name="id" value="{{pack_id}}" />
+        <input type="submit" value="Delete" />
+        </form>
+        </td>
+      </tr>
+    {{else}}
+        <tr>
+        <td colspan="5">No Data Available</td>
+    </tr>
+    {{/each}}
+</table>
+
+
+    <p>Register a new Package:</p>
+    <div style="text-align:right;width:400px;border:1px dashed #6495de;padding:16px;">
+      <form action="/register-pack" method="POST" enctype="multipart/form-data">
+        <label for="name">Package Name</label>
+        <input id="name" type="text" name="name"/><br />
+        <label for="price">Package Price</label>
+        <input id="price" type="number" step="0.01" name="price"/><br />
+        <label for="desc">Package description</label>
+        <input id="desc" type="text" name="desc"/><br />
+        <label for="category">Package food category</label>
+        <input id="category" type="text" name="category"/><br />
+        <label for="number">Number of meals</label>
+        <input id="number" type="number" name="number"/><br />
+        <label for="photo">Photo ID</label>
+        <input id="photo" type="file" name="photo"/><br />
+        <input type="submit" value="Submit File" />
+      </form>
+    </div>
+
+  </body>
+</html>
