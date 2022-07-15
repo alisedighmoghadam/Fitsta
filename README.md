@@ -1,4 +1,4 @@
-<!-- JavaScript,HTML,CSS,Handlebars,NodeJS,Express,PostgreSQL -->
+<!-- JavaScript,HTML,CSS,Handlebars,NodeJS,PostgreSQL -->
 # Fitsta
 
 <p>
